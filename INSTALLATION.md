@@ -11,7 +11,7 @@
 
  - install the vhost
 
-        cd CamberwellFields && cp config/frontendtest.conf /home/vhosts/
+        cd frontendtest && cp config/frontendtest.conf /home/vhosts/
 
  - add bradley dyer as remote
 
