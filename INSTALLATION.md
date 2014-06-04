@@ -42,3 +42,8 @@
  - reset your apache
 
         sudo apachectl restart
+
+ - open the site
+    frontendtest.local
+    
+        http://frontendtest.local
