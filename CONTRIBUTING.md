@@ -93,17 +93,17 @@ Well formed code is neat, correctly aligned and indented. Comment your code as r
 To write semantically correct HTML, you need to select the correct HTML element to mark-up the content. In other words, this means using a `<table>` to mark-up tabulated content, using a `<ul>` to mark-up an unordered list, and so on.
 
 ```
-  &lt;ul&gt;
+  <pre>&lt;ul&gt;
   &lt;li&gt;Apples&lt;/li&gt;
   &lt;li&gt;Oranges&lt;/li&gt;
   &lt;li&gt;Pears&lt;/li&gt;
   &lt;li&gt;Peaches&lt;/li&gt;
-  &lt;/u&gt;
+  &lt;/u&gt;</pre>
   ```
 Not:
 
 ```
- &lt;p&gt;Apples&lt;br&gt;Oranges&lt;br&gt;Pears&lt;br&gt;Peaches&lt;/p&gt;
+ <pre>&lt;p&gt;Apples&lt;br&gt;Oranges&lt;br&gt;Pears&lt;br&gt;Peaches&lt;/p&gt;</pre>
 ```
 
 Semantically correct HTML is instrumental in creating SEO compliant and accessible web pages.
