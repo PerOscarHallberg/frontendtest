@@ -86,7 +86,7 @@ It is important that you understand how browsers work - this will allow you to u
 
 ### Writing well formed code
 
-Well formed code is neat, correctly aligned and indented. Comment your code as required.
+Well formed code is neat, correctly aligned and indented. Indent your code using 4 spaces (not tabs). Comment your code as required.
 
 ### Writing semantically correct HTML
 
