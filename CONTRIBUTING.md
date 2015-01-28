@@ -76,7 +76,7 @@ The important thing is not to find the quickest solution, but to find the best s
 
 ##BRADLEY DYER CODING STANDARDS AND GUIDELINES
 
-## A guide to the default HTML
+## HTML
 
 ### Writing valid code
 
@@ -164,11 +164,13 @@ When using the conditional classes technique, applying classes to the `html` ele
 
 After implimenting the conditional comments, you can target Internet Explorer browsers in your css as follows:
 
-                        <pre>footer {color:#505050;}
-.lt-ie7 footer {color:#333;}  /* ie6 */
-.ie7 footer {color:#000;}     /* ie7 */
-.ie8 footer {color:#fff;}     /* ie8 */
-.ie9 footer {color:#aaa;}     /* ie9 */</pre>
+```
+ footer {color:#505050;}
+ .lt-ie7 footer {color:#333;}  /* ie6 */
+ .ie7 footer {color:#000;}     /* ie7 */
+ .ie8 footer {color:#fff;}     /* ie8 */
+ .ie9 footer {color:#aaa;}     /* ie9 */
+```
 
 ### The `no-js` class
 
@@ -176,15 +178,16 @@ Allows you to target browsers with JavaScript disabled (`.no-js`) or enabled (`.
 
 After implimenting the conditional comments, you can target browsers with javaScrip enabled/disabled in your css as follows:
 
-                        <pre>.js footer {color:#000;}      /* javaScript enabled */
-.no-js footer {color:#fff;}   /* javaScript disabled */</pre>
+```
+ .js footer {color:#000;}      /* javaScript enabled */
+ .no-js footer {color:#fff;}   /* javaScript disabled */
+```
 
 More here: [Avoiding the FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/).
 
 ### The order of meta tags, and `<title>`
 
-As recommended by [the HTML5 spec](http://www.whatwg.org/specs/web-apps/current-work/complete/semantics.html#charset)
-                        (4.2.5.5 Specifying the document's character encoding), add your charset declaration early (before any ASCII art ;) to avoid a potential [encoding-related security issue](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) in IE. It should come in the first [1024 bytes](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset).
+As recommended by [the HTML5 spec](http://www.whatwg.org/specs/web-apps/current-work/complete/semantics.html#charset) (4.2.5.5 Specifying the document's character encoding), add your charset declaration early (before any ASCII art ;) to avoid a potential [encoding-related security issue](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) in IE. It should come in the first [1024 bytes](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset).
 
 The charset should also come before the `<title>` tag, due to [potential XSS vectors](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7).
 
@@ -192,15 +195,15 @@ The charset should also come before the `<title>` tag, due to [potential XSS vec
 
 This makes sure the latest version of IE is used in versions of IE that contain multiple rendering engines. Even if a site visitor is using IE8 or IE9, it's possible that they're not using the latest rendering engine their browser contains. To fix this, we use:
 
-                        <pre><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span></pre>
+```
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
 
 The `meta` tag tells the IE rendering engine it should use the latest, or edge, version of the IE rendering environment.
 
 This `meta` tag ensures that anyone browsing your site in IE is treated to the best possible user experience that their browser can offer.
 
-This line breaks validation. To avoid this edge case issue it is recommended that you **remove this line and use the `.htaccess`** (or other server config)
-                        to send these headers instead. You also might want to read [Validating:
-                        X-UA-Compatible](http://groups.google.com/group/html5boilerplate/browse_thread/thread/6d1b6b152aca8ed2).
+This line breaks validation. To avoid this edge case issue it is recommended that you **remove this line and use the `.htaccess`** (or other server config) to send these headers instead. You also might want to read [Validating: X-UA-Compatible](http://groups.google.com/group/html5boilerplate/browse_thread/thread/6d1b6b152aca8ed2).
 
 If you are serving your site on a non-standard port, you will need to set this header on the server-side. This is because the IE preference option 'Display intranet sites in Compatibility View' is checked by default.
 
@@ -208,9 +211,11 @@ If you are serving your site on a non-standard port, you will need to set this h
 
 There are a few different options that you can use with the [`viewport` meta tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and Media Queries - The Complete Idiot"). You can find out more in [the Apple developer docs](http://j.mp/mobileviewport). 
 
-                        <pre><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span></pre>
+```
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
-### Favicons and Touch Icon
+### Favicons and Touch Icons
 
 The shortcut icons should be put in the root directory of your site. This standard project provides a **default set of icons** (including a favicon and  Apple Touch Icons) that you can use as a baseline to create your own. It can be found at _path-to-template_
 
@@ -220,12 +225,14 @@ The shortcut icons should be put in the root directory of your site. This standa
 
 For example, for browsers that don't support multiple background images, you could write fallback CSS as follows to specify a different background image:
 
-                        <pre>.intro-wrapper{
-  background:url(img_tree.gif),url(img_flwr.gif);
-  background-size:100% 100%;
-  background-repeat:no-repeat;
-}
-.no-multiplebgs .intro-wrapper{background:url(img_tree_and_flower.jpg) 0 0 no-repeat #333);}</pre>
+```
+ .intro-wrapper{
+   background:url(img_tree.gif),url(img_flwr.gif);
+   background-size:100% 100%;
+   background-repeat:no-repeat;
+ }
+ .no-multiplebgs .intro-wrapper{background:url(img_tree_and_flower.jpg) 0 0 no-repeat #333);}
+```
 
 In general, in order to keep page load times to a minimum, it's best to call any JavaScript at the end of the page because if a script is slow to load from an external server it may cause the whole page to hang. That said, the Modernizr script _needs_ to run _before_ the browser begins rendering the page, so that browsers lacking support for some of the new HTML5 elements are able to handle them properly. Therefore the Modernizr script is the only JavaScript file synchronously loaded at the top of the document.
 
@@ -233,7 +240,9 @@ In general, in order to keep page load times to a minimum, it's best to call any
 
 The standard project `header include` includes a prompt to users of legacy browsers to upgrade their browser. The message will appear at the top of the page. It uses cookies (see main.js and plugins.js) to show the message once only per user session.
 
-                        <pre>You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) to improve your experience.<button aria-hidden="true" class="close" type="button">×</button></pre>
+```
+ You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) to improve your experience.<button aria-hidden="true" class="close" type="button">×</button>
+```
 
 ### Google CDN for jQuery
 
@@ -245,38 +254,66 @@ Regardless of which JavaScript library you choose to use, it is well worth the t
 
 Finally, an optimized version of the latest Google Analytics tracking code is included at the bottom of each html page.
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-xxxxxxxx-x', 'website.com');
-      ga('send', 'pageview');
-    </script>
+```
+ <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+```
 
 You will need to change UA-XXXXX-X to the client's site ID to configure their analytics.
 
 More information:
 
-*   [Optimizing the asynchronous Google Analytics
-                            snippet](http://mathiasbynens.be/notes/async-analytics-snippet).
+*   [Optimizing the asynchronous Google Analytics snippet](http://mathiasbynens.be/notes/async-analytics-snippet).
 *   [Tracking Site Activity - Google Analytics](http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html).
 
 ### Fonts
 
-We use xxx and xxx for custom web fonts. Log in details are available in [keypass](http://keepass.info/)???
+The designer will provide any non-standard fonts that are required. Fonts should be placed in the fonts folder and imported by adding the following `CSS` to styles.css (Substitute the correct fonts):
+
+```
+ /* fonts ------------------------------------------------------------------ */
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f2ad3054-2aa4-4694-9c64-079613925759");
+@font-face{
+    font-family:"HelveticaNeueW01-85Heav";
+    src:url("/fonts/bb37f770-d450-4f24-af2b-3a81bf640315.eot?#iefix");
+    src:url("/fonts/bb37f770-d450-4f24-af2b-3a81bf640315.eot?#iefix") format("eot"),url("/fonts/a0d9d2cb-f057-4e8d-a957-27853630f58e.woff") format("woff"),url("/fonts/54085041-5049-4b91-939c-49980c66abab.ttf") format("truetype"),url("/fonts/7a48747c-74f2-49a8-bb65-1c522d4aa618.svg#7a48747c-74f2-49a8-bb65-1c522d4aa618") format("svg");
+}
+@font-face{
+    font-family:"HelveticaNeueW01-75Bold";
+    src:url("/fonts/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix");
+    src:url("/fonts/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix") format("eot"),url("/fonts/14ff6081-326d-4dae-b778-d7afa66166fc.woff") format("woff"),url("/fonts/8fda1e47-19be-46c7-8d83-8d4fb35572f0.ttf") format("truetype"),url("/fonts/f751c8ae-1057-46d9-8d74-62592e002568.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+}
+@font-face{
+font-family:"HelveticaNeueW01-45Ligh";
+src:url("/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
+src:url("/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"),url("/fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),url("/fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),url("/fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg");
+}
+@font-face{
+    font-family:"BaskervilleMTW01-Roman";
+    src:url("/fonts/1c82c893-6f0a-4afd-9e72-b9bcfc9f52ae.eot?#iefix");
+    src:url("/fonts/1c82c893-6f0a-4afd-9e72-b9bcfc9f52ae.eot?#iefix") format("eot"),url("/fonts/e693baea-eb63-411f-a311-2a2e421ef6f2.woff") format("woff"),url("/fonts/98b07788-69ae-4704-a8e1-31d61e8ff83b.ttf") format("truetype"),url("/fonts/60054d7a-8ca2-4320-8c5d-3fc9aed09e58.svg#60054d7a-8ca2-4320-8c5d-3fc9aed09e58") format("svg");
+}
+
+/* fonts ------------------------------------------------------------ [END] */
+```
 
 ### Font Awsome
 
 We use [font-awsome](http://fortawesome.github.io/Font-Awesome/) to display retina ready icons on our web sites. You can place Font Awesome icons just about anywhere with the `<i>` tag.
 
-                        <pre>`<i class="fa fa-eur"></i>` renders 
-`<i class="fa fa-scissors"></i>` renders 
-`<i class="fa fa-angle-right"></i>` renders 
-`<i class="fa fa-fast-forward"></i>` renders 
-`<i class="fa fa-apple"></i>` renders 
-`<i class="fa fa-volume-up"></i>` renders </pre>
+<i class="fa fa-eur"></i> renders 
+<i class="fa fa-scissors"></i> renders 
+<i class="fa fa-angle-right"></i> renders 
+<i class="fa fa-fast-forward"></i> renders 
+<i class="fa fa-apple"></i> renders 
+<i class="fa fa-volume-up"></i> renders 
 
 [More examples ](http://fortawesome.github.io/Font-Awesome/examples/)
 
