@@ -286,7 +286,7 @@ The designer will provide any non-standard fonts that are required. Fonts should
 /* fonts ------------------------------------------------------------ [END] */
 ```
 
-### Font Awsome
+### Icons
 
 We use [font-awsome](http://fortawesome.github.io/Font-Awesome/) to display retina ready icons on our web sites. You can place Font Awesome icons just about anywhere with the `<i>` tag.
 
