@@ -277,22 +277,6 @@ The designer will provide any non-standard fonts that are required. Fonts should
 ```
  /* fonts ------------------------------------------------------------------ */
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f2ad3054-2aa4-4694-9c64-079613925759");
-@font-face{
-    font-family:"HelveticaNeueW01-85Heav";
-    src:url("/fonts/bb37f770-d450-4f24-af2b-3a81bf640315.eot?#iefix");
-    src:url("/fonts/bb37f770-d450-4f24-af2b-3a81bf640315.eot?#iefix") format("eot"),url("/fonts/a0d9d2cb-f057-4e8d-a957-27853630f58e.woff") format("woff"),url("/fonts/54085041-5049-4b91-939c-49980c66abab.ttf") format("truetype"),url("/fonts/7a48747c-74f2-49a8-bb65-1c522d4aa618.svg#7a48747c-74f2-49a8-bb65-1c522d4aa618") format("svg");
-}
-@font-face{
-    font-family:"HelveticaNeueW01-75Bold";
-    src:url("/fonts/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix");
-    src:url("/fonts/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix") format("eot"),url("/fonts/14ff6081-326d-4dae-b778-d7afa66166fc.woff") format("woff"),url("/fonts/8fda1e47-19be-46c7-8d83-8d4fb35572f0.ttf") format("truetype"),url("/fonts/f751c8ae-1057-46d9-8d74-62592e002568.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
-}
-@font-face{
-font-family:"HelveticaNeueW01-45Ligh";
-src:url("/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
-src:url("/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"),url("/fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),url("/fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),url("/fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg");
-}
 @font-face{
     font-family:"BaskervilleMTW01-Roman";
     src:url("/fonts/1c82c893-6f0a-4afd-9e72-b9bcfc9f52ae.eot?#iefix");
