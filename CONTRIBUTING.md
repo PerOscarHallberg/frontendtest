@@ -122,31 +122,29 @@ The third layer is JavaScript. This allows user-agents that are capable of using
 
 `html` and `php` page names should be _all lowercase_ and _hyphenated_.
 
-                        <pre>search-results.html</pre>
+ search-results.html
 
 Your css classes and id's should be logically named.
 
-                        <pre>.user-error{background:red;}
+ ```.user-error{background:red;}```
  not
-.red-box{background:red;}</pre>
+ ```.red-box{background:red;}```
 
 ID's should be unique and used once only per page.
 
 Images should be logically named using hyphens between words.
 
-                        <pre>mr-john-smith-ceo-galliard.jpg</pre>
+ ```mr-john-smith-ceo-galliard.jpg```
 
 When creating a number of images for the same use, consider naming them by what they are, followed by a unique identifier.
 
-                        <pre>developments-slider-st-johns.jpg
-developments-slider-st-venns.jpg
-developments-slider-st-thomas.jpg</pre>
+ ``` developments-slider-st-johns.jpg
+ developments-slider-st-venns.jpg
+ developments-slider-st-thomas.jpg```
 
 ### Conditional `html` classes
 
-A series of IE conditional comments apply the relevant IE-specific classes to
-                        the `html` tag. This provides one method of specifying CSS fixes for specific
-                        legacy versions of IE.
+A series of IE conditional comments apply the relevant IE-specific classes to the `html` tag. This provides one method of specifying CSS fixes for specific legacy versions of IE.
 
 When using the conditional classes technique, applying classes to the `html`
                         element has several benefits:
