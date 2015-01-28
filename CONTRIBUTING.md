@@ -331,9 +331,9 @@ Please comment all your CSS with an apropriate opening and closing comment, as w
  /* map-canvas ---------------------------------------------------------- [END] */
 ```
 
-`styles.css` includes Media Queries to build up your mobile styles for wider/narrower viewports bassed on the bootstrap3 breakpoints. See (http://getbootstrap.com/css/#grid)
+`styles.css` includes Media Queries to build up your mobile styles for wider/narrower viewports bassed on the [bootstrap3 breakpoints](http://getbootstrap.com/css/#grid).
 
-styles.css is well commented, but if you have any questions, just ask.
+`styles.css` is well commented, but if you have any questions, just ask.
 
 ## JavaScript
 
@@ -372,9 +372,13 @@ Use semantic Mark-up that's readable and logical when JavaScript and CSS are dis
 
 All links should be to HTML destinations.
 
-                        <pre>&lt;a href="/shelf/jordan/page/2"&gt;
+```
+ <a href="/shelf/jordan/page/2">
+```
 Instead of:
-&lt;a href="javascript:loadPage(2);"&gt;</pre>
+```
+ <a href="javascript:loadPage(2);">
+```
 
 This lets the page get indexed correctly by search engines and allows users to open the page in new tabs and windows.
 
@@ -382,9 +386,13 @@ This lets the page get indexed correctly by search engines and allows users to o
 
 The title tag should feature target keywords for the unique page. The titles should be unique to each page. Headings (h1,h2,etc) should form an outline of the document and represent the most important keywords for that page. URLs should be human-readable with primary target keywords present in them:
 
-                        <pre>http://domain.com/mens-shoes/basketball/jordan/jordan-mens-ajf-6-basketball-shoe/
+```
+ http://domain.com/mens-shoes/basketball/jordan/jordan-mens-ajf-6-basketball-shoe/
+```
 vs
-http://domain.com/ecomm.cfm?view=prod&amp;prodId=23425</pre>
+```
+ http://domain.com/ecomm.cfm?view=prod&prodId=23425
+```
 
 ### Sitemap
 
@@ -402,13 +410,13 @@ To set up a new analytics account for a client:
 
 1.  Set up a GMAIL account using the following format:
 
-        *   First Name: galliard
+    *   First Name: galliard
     *   Last Name: homes
     *   Email: galliardhomesltd@gmail.com
     *   Password: ghomes!!!
 2.  Set up an analytics account:
 
-        *   (same as Google Mail login)
+    *   (same as Google Mail login)
     *   Email: galliardhomesltd@gmail.com
     *   Password: ghomes!!!
 3.  Update the analytics tracking code on the client's site.
@@ -437,9 +445,9 @@ When sites are sympathetically built and maintained, all of these users can be a
 
 All Bradley Dyer developers should be familiar with The W3C [checklist](http://www.w3.org/WAI/GL/2005/06/checklist-proto.html) of checkpoints for accessibility and strive to comply with them.
 
-                        All Bradley Dyer developers should be familiar with the [WCAG Accessibility Guidelines](http://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines)
+All Bradley Dyer developers should be familiar with the [WCAG Accessibility Guidelines](http://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines)
 
-                        For enterprise level web-builds, the completed template set _could_ be independently audited by an external body such as the [RNIB](http://www.rnib.org.uk/professionals/webaccessibility/services/siteaudits/Pages/site_audits.aspx).
+For enterprise level web-builds, the completed template set _could_ be independently audited by an external body such as the [RNIB](http://www.rnib.org.uk/professionals/webaccessibility/services/siteaudits/Pages/site_audits.aspx).
 
 Some nice articles and other accessibility resources can be found at [Web AIM](http://webaim.org/).
 
