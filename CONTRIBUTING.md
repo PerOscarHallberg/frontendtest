@@ -393,15 +393,15 @@ To set up a new analytics account for a client:
 
 1.  Set up a GMAIL account using the following format:
 
-    *   First Name: galliard
-    *   Last Name: homes
-    *   Email: galliardhomesltd@gmail.com
-    *   Password: ghomes!!!
+    *   First Name: northwest
+    *   Last Name: village
+    *   Email: northwestvillage@gmail.com
+    *   Password: nwvillage!!!
 2.  Set up an analytics account:
 
     *   (same as Google Mail login)
-    *   Email: galliardhomesltd@gmail.com
-    *   Password: ghomes!!!
+    *   Email: northwestvillage@gmail.com
+    *   Password: nwvillage!!!
 3.  Update the analytics tracking code on the client's site.
 
 ## Accessibility
