@@ -217,7 +217,7 @@ There are a few different options that you can use with the [`viewport` meta tag
 
 ### Favicons and Touch Icons
 
-The shortcut icons should be put in the root directory of your site. The favicon and touch icons should be provided by the designer, but they are often overlooked, so feel free to prod the designer.
+The shortcut icons should be put in the root directory of your site. The favicon and touch icons should be provided by the designer, but they are often overlooked, so feel free to prod the designer if they are not supplied.
 
 ### Modernizr
 
