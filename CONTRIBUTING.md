@@ -308,24 +308,16 @@ src:url("/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"),
 
 We use [font-awsome](http://fortawesome.github.io/Font-Awesome/) to display retina ready icons on our web sites. You can place Font Awesome icons just about anywhere with the `<i>` tag.
 
-<i class="fa fa-eur"></i> renders 
-<i class="fa fa-scissors"></i> renders 
-<i class="fa fa-angle-right"></i> renders 
-<i class="fa fa-fast-forward"></i> renders 
-<i class="fa fa-apple"></i> renders 
-<i class="fa fa-volume-up"></i> renders 
-
-[More examples ](http://fortawesome.github.io/Font-Awesome/examples/)
+[Examples ](http://fortawesome.github.io/Font-Awesome/examples/)
 
 Designers that want to create their own icon set can follow [this tutorial](http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/).
 
 ## CSS
 
-The standard project includes a handful of base styles in styles.css that you can build on.
-
 Please comment all your CSS with an apropriate opening and closing comment, as well as additional comments within the opening / closing comment if required. This will help when maintaining the codebase down the line.
 
-/* map-canvas ---------------------------------------------------------------- */
+```
+ /* map-canvas ---------------------------------------------------------------- */
 
   #contact-map-canvas {
       height: 450px;
@@ -336,9 +328,10 @@ Please comment all your CSS with an apropriate opening and closing comment, as w
   /* contact-map-info-window */
   .contact-map-info-window{width:300px;}
 
-/* map-canvas ---------------------------------------------------------- [END] */
+ /* map-canvas ---------------------------------------------------------- [END] */
+```
 
-styles.css includes Media Queries to build up your mobile styles for wider/narrower viewports bassed on the bootstrap3 breakpoints.
+`styles.css` includes Media Queries to build up your mobile styles for wider/narrower viewports bassed on the bootstrap3 breakpoints. See (http://getbootstrap.com/css/#grid)
 
 styles.css is well commented, but if you have any questions, just ask.
 
