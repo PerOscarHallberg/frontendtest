@@ -382,6 +382,7 @@ Consider adding a [sitemap](http://www.sitemaps.org/protocol.html) to compliment
 
 ### Schema
 
+(If required)
 Use schema to add semantic meaning to mark-up. Read [SEO Benefits For Real Estate Companies Using Schema.org](http://blog.sharpeproperties.com/2012/03/seo-benefits-for-real-estate-companies.html)
 
 More at [schema.org ](http://www.schema.org)
