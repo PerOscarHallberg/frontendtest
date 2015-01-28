@@ -240,7 +240,7 @@ In general, in order to keep page load times to a minimum, it's best to call any
 
 The standard project `header include` includes a prompt to users of legacy browsers to upgrade their browser. The message will appear at the top of the page. It uses cookies (see main.js and plugins.js) to show the message once only per user session.
 
-`You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) to improve your experience.<button aria-hidden="true" class="close" type="button">×</button>`
+You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) to improve your experience.
 
 ### Google CDN for jQuery
 
